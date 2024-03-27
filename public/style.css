@@ -1,0 +1,103 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .content-box{
+    background-color: white;
+    padding: 1rem;
+    width: 400px;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    box-shadow: .5px .5px 8px 4px rgb(237, 235, 235);
+}
+.alert{
+    color: white;
+    padding: .2rem 1rem;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 12px;
+    display: none;
+}
+.alert-success{
+    background-color: rgb(13, 233, 134);
+    display: block;
+}
+.alert-danger{
+    background-color: rgb(220, 46, 46);
+    display: block;
+}
+.form-class .value{
+    width: 300px;
+    background-color: aliceblue;
+    border: none;
+    padding: .5rem;
+    border-radius: 4px;
+    outline: 0;
+    font-weight: 600;
+    color: #012345;
+}
+.form-class .btn-submit{
+    color: aliceblue;
+    padding: .5rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #012345;
+}
+.items{
+    margin-top: 2rem;
+    width: 350px;
+}
+.items .item{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: .5rem;
+    color: #012345;
+    font-weight: 600;
+    border-radius: 3px;
+    box-shadow: .5px .5px 6px rgb(232, 228, 228);
+    margin-bottom: 1rem;
+}
+.items .item button{
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    padding: .2rem .5rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.items .item .edit{
+    background-color: rgb(13, 233, 134);
+}
+.items .item .delete{
+    background-color: rgb(220, 46, 46);
+}
+.clear-items{
+    display: none;
+    margin-top: 1rem;
+    width: 100%;
+}
+.clear-items .clear-btn{
+    background-color: rgb(220, 46, 46);
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: .2rem .3rem;
+}
+.wipe .clear-items{
+    display: block;
+}
+

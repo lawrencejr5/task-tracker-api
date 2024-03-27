@@ -3,19 +3,18 @@ const app = express();
 
 const task_routes = require("./routes/tasks");
 const connectDb = require("./db/connect");
+const notFound = require("./middleware/not-found");
 require("dotenv").config();
-
-const port = 5000;
 
 // middleware
 app.use(express.json());
-app.use("/api/v1/tasks", task_routes);
+app.use(express.static("../public"));
 
 // routes
-app.get("/", (req, res) => {
-  res.send("Testing Task Tracker Applcation");
-});
+app.use("/api/v1/tasks", task_routes);
+app.use(notFound);
 
+const port = 5000;
 const startServer = async () => {
   try {
     await connectDb(process.env.MONGO_URI);
