@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js todolist</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Js Todolist</h1>
     <div class="container">
@@ -13,17 +15,21 @@
             <div class="alert">Item added to the list</div>
             <h4>My List</h4>
             <form class="form-class">
-                <input type="text" name="" class="value" autofocus>
+                <input type="text" name="task" class="value" autofocus>
                 <button type="submit" class="btn-submit">Add</button>
             </form>
             <div class="items">
-                
+                Loading.............
             </div>
             <div class="clear-items">
                 <button class="clear-btn">Clear all items</button>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
